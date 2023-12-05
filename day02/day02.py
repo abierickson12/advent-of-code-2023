@@ -62,10 +62,10 @@ def main():
     record_moves = parse_record(f.readlines())
 
     id_sum = evaluate_games(record_moves)
-    print('Sum of IDs of possible games: ', id_sum)
+    print('Sum of IDs of possible games:', id_sum)
 
     power_sum = calculate_power(record_moves)
-    print('Sum of power of the minimum set of cubes: ', power_sum)
+    print('Sum of power of the minimum set of cubes:', power_sum)
 
 
 main()

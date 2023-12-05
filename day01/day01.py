@@ -12,7 +12,7 @@ def convert_digit_names(values):
         for name in digit_names.keys():
             value = re.sub(name, name[0] + digit_names[name] + name[-1], value)
         converted_values.append(value)
-    print(converted_values)
+
     return converted_values
 
 
@@ -34,11 +34,11 @@ def main():
     values = f.readlines()
 
     sum = calculate_calibration(values)
-    print('Sum of part 1 calibration values: ', sum)
+    print('Sum of part 1 calibration values:', sum)
 
     converted_values = convert_digit_names(values)
     converted_sum = calculate_calibration(converted_values)
-    print('Sum of part 2 calibration values: ', converted_sum)
+    print('Sum of part 2 calibration values:', converted_sum)
 
 
 main()
